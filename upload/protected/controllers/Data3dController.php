@@ -200,7 +200,9 @@ class Data3dController extends Controller
 			$trend_hundred[$j] = $hundred[$i-$j-1];
 			$trend_ten[$j] = $one[$i-$j-1];
 			$trend_one[$j] = $ten[$i-$j-1];
+			$trend_categories[$j] = $trend['categories'][$i-$j-1];
 		}
+		$trend['categories'] = $trend_categories;
 
 		$this->render('trend',array(
 			'trend'=>$trend,
