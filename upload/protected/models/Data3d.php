@@ -62,10 +62,10 @@ class Data3d extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'number' => 'Number',
-			'hundred' => 'Hundred',
-			'ten' => 'Ten',
-			'one' => 'One',
+			'number' => '期号',
+			'hundred' => '百位',
+			'ten' => '十位',
+			'one' => '个位',
 		);
 	}
 
