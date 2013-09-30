@@ -185,6 +185,7 @@ class Data3dController extends Controller
 			$trend['hundred'][$i] = in_array($ele['hundred'], $a) ? 1 : 0;
 			$trend['ten'][$i] = in_array($ele['ten'], $a) ? 1 : 0;
 			$trend['one'][$i] = in_array($ele['one'], $a) ? 1 : 0;
+			$trend['categories'][$i] = $ele['number'];
 			$i++;
 		}
 
@@ -192,7 +193,7 @@ class Data3dController extends Controller
 			$hundred[$i] = array_sum(array_slice($trend['hundred'], $i, $len));
 			$ten[$i] = array_sum(array_slice($trend['ten'], $i, $len));
 			$one[$i] = array_sum(array_slice($trend['one'], $i, $len));
-			$trend['categories'][$i] = $i+1;
+			$trend['categories'][$i] = $trend['categories'][$i];
 		}
 
 		$this->render('trend',array(

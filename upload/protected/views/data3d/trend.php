@@ -22,7 +22,8 @@
      'options'=>array(
         'title' => array('text' => $max.'/'.$len.'A线图'),
         'xAxis' => array(
-           'categories' => $trend['categories']
+           'categories' => $trend['categories'],
+           'labels' => array('rotation'=>-45, 'align'=>'right', 'style'=>array('fontSize'=>'13px', 'fontFamily'=>'Verdana, sans-serif'))
         ),
         'yAxis' => array(
            'title' => array('text' => '3D')
