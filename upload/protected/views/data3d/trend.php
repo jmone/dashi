@@ -1,3 +1,4 @@
+链接格式：http://dashi.yiishare.com/index.php?r=data3d/trend&max=50&len=10 (50表示最近50期数据，10表示统计连续10其的A值)
 <?php
 /*
   $this->Widget('ext.highcharts.HighchartsWidget', array(
@@ -36,4 +37,3 @@
   ));
  
 ?>
-
