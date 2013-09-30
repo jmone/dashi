@@ -23,8 +23,9 @@
         'title' => array('text' => $max.'/'.$len.'A线图'),
         'xAxis' => array(
            'categories' => $trend['categories'],
-           'labels' => array('rotation'=>-45, 'align'=>'right', 'style'=>array('fontSize'=>'13px', 'fontFamily'=>'Verdana, sans-serif'))
+           'labels' => array('rotation'=>-45, 'align'=>'right', 'style'=>array('fontSize'=>'13px', 'fontFamily'=>'Verdana, sans-serif')),
         ),
+	//'legend' => array('layout'=>'vertical', 'align'=>'right', 'floating'=>true, 'borderWidth'=>1, 'backgroundColor'=>'#FFFFFF'),
         'yAxis' => array(
            'title' => array('text' => '3D')
         ),
